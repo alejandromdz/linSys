@@ -14,12 +14,18 @@ particlesJS.load('particles-js', 'particles.json', function() {
 particlesJS('particles-js',
   
   {
+      
+     
+
+
     "particles": {
       "number": {
         "value": 80,
         "density": {
           "enable": true,
           "value_area": 800
+
+
         }
       },
       "color": {
@@ -85,11 +91,11 @@ particlesJS('particles-js',
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "repulse"
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "push"
         },
         "resize": true
@@ -117,17 +123,11 @@ particlesJS('particles-js',
         "remove": {
           "particles_nb": 2
         }
+
       }
+
     },
-    "retina_detect": true,
-    "config_demo": {
-      "hide_card": false,
-      "background_color": "#b61924",
-      "background_image": "",
-      "background_position": "50% 50%",
-      "background_repeat": "no-repeat",
-      "background_size": "cover"
-    }
+    
   }
 
 );
