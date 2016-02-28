@@ -30,20 +30,22 @@ var pJS = function(tag_id, params){
         value: '#fff'
       },
       shape: {
-        type: 'circle',
-        stroke: {
-          width: 0,
-          color: '#ff0000'
-        },
-        polygon: {
-          nb_sides: 5
-        },
-        image: {
-          src: '',
-          width: 100,
-          height: 100
-        }
-      },
+          type: 'circle',
+          stroke: {
+              width: 0,
+              color: '#ff0000'
+          },
+          polygon: {
+              nb_sides: 5
+          },
+
+          image: {
+              src: '',
+              width: 100,
+              height: 100
+          }
+      }
+      ,
       opacity: {
         value: 1,
         random: false,
