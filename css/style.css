@@ -1066,7 +1066,7 @@
 		/*Particle effect*/
 #particles-js {
      background-image:url(../images/linsys2.png);
-    background-position:50% 100%;
+    background-position:center;
     background-repeat:no-repeat;
     background-size:cover
  
@@ -1096,10 +1096,7 @@ height: 180px;
 			border-bottom: 1px solid rgba(144, 144, 144, 0.25);
 			border-top: 1px solid rgba(144, 144, 144, 0.25);
 		}
-		.wrapper.style1 h2
-		{
-		    color: White;
-		}
+		
 
 			.wrapper.style1 .box {
 				background-color: #fff;
