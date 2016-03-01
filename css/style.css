@@ -1032,8 +1032,8 @@
 
 	#banner {
       
-		background-image: url(../images/dark_tint.png), url(../images/bokeh_car_lights_bg.jpg);
-		background-position: center center;
+		background-image: url(../images/pic04.jpg);
+		
 		background-size: cover;
 		color: #ffffff;
 		padding: 14em 0em 14em;
@@ -1062,6 +1062,8 @@
 
 
 		}
+		
+		/*Particle effect*/
 #particles-js {
      background-image:url(../images/linsys2.png);
     background-position:50% 100%;
@@ -1087,10 +1089,16 @@ height: 180px;
 		/* Style 3 Wrapper */
 	}
 
-		.wrapper.style1 {
+		.wrapper.style1 
+		{
+		  
 			background-color: #F5F5F5;
 			border-bottom: 1px solid rgba(144, 144, 144, 0.25);
 			border-top: 1px solid rgba(144, 144, 144, 0.25);
+		}
+		.wrapper.style1 h2
+		{
+		    color: White;
 		}
 
 			.wrapper.style1 .box {
