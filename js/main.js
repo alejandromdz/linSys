@@ -20,6 +20,15 @@ $(function () {
             data: formData
         })
 
+        $.ajax({
+            type: 'POST',
+            url: $(form).attr('action'),
+            data: formData,
+            beforeSend: function(){
+                form.prepend( formMessages.html('Enviando correo...').fadeIn() );
+            }
+        })
+
         .done(function (response) {
             // Make sure that the formMessages div has the 'success' class.
             $(formMessages).removeClass('error');
