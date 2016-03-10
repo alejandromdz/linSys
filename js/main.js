@@ -17,17 +17,15 @@ $(function () {
         $.ajax({
             type: 'POST',
             url: $(form).attr('action'),
-            data: formData
+            data: formData,
+
+            beforeSend: function(){
+            form.prepend( formMessages.html('Enviando correo...').fadeIn() );
+        }
+
         })
 
-        $.ajax({
-            type: 'POST',
-            url: $(form).attr('action'),
-            data: formData,
-            beforeSend: function(){
-                form.prepend( formMessages.html('Enviando correo...').fadeIn() );
-            }
-        })
+      
 
         .done(function (response) {
             // Make sure that the formMessages div has the 'success' class.
@@ -52,7 +50,7 @@ $(function () {
             if (data.responseText !== '') {
                 $(formMessages).text(data.responseText);
             } else {
-                $(formMessages).text('Oops! An error occured and your message could not be sent.');
+                $(formMessages).text('Un error ha ocurrido y tu mensaje no pudo ser enviado.');
             }
         });
     });
