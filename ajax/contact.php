@@ -23,7 +23,7 @@
 		
 		
 	</head>
-
+	<body class="landing">
 	<!-- Header -->
 			<header id="header">
 				<h1><a href="index.html">Inicio</a></h1>
@@ -89,3 +89,5 @@
     }
 
 ?>
+
+</body>
