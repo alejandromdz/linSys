@@ -16,13 +16,14 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-	
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-xlarge.css" />
-			<link rel="stylesheet" href="css/leaflet.css" />
-		
-	</head>
+        <noscript>
+            <link rel="stylesheet" href="css/skel.css" />
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/style-xlarge.css" />
+        </noscript>
+            <link rel="stylesheet" href="leaflet.css" />
+          
+</head>
 	<body>
 
         <!-- Header -->
@@ -39,87 +40,100 @@
         </header>
 
      
-	
-			      <!-- Map -->
-     <div id="map" class="nostyle" style="width: 600px; height: 400px"></div>
-     	<script src="js/leaflet.js"></script>
-		<script>
+        <!-- Main -->
 
-		    var map = L.map('map').setView([19.6, -99.19], 15);
-		    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-		        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-		    }).addTo(map);
+        
+       
+            <section id="main" class="wrapper">
+                <div class="container">
 
-		    
-   </script>
+                    <header class="major">
+                        <h2>LynSys es una empresa 100% mexicana</h2>
+                        <p>Somos una empresa dedicada a ofrecerte lo mejor de la tecnología en tu idioma, entendiendo las necesidades del mercado mexicano y trabajando siempre para satisfacer tus requerimientos</p>
+                    </header>
+                </div>
+                <div class="container" id="map" style="width: 600px; height: 400px; ">
+                    <script src="leaflet.js"></script>
+                    <script>
 
+                        var map = L.map('map').setView([19.601982, -99.1924197], 16);
+                        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                        }).addTo(map);
 
+                        L.marker([19.6009908, -99.1883953]).addTo(map)
+                .bindPopup("<b>LinSys</b><br />Nuestra Ubicación.").openPopup();
 
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="container">
-                <section class="links">
+                    </script>
+                </div>
+
+            </section>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <div class="container">
+                    <section class="links">
+                        <div class="row">
+                            <section class="4u 12u$(medium)">
+                                <h3>Aplicaciones</h3>
+                                <ul class="unstyled">
+                                    <li><a href="#">Implementación de web-services</a></li>
+                                    <li><a href="#">Desarrollo de aplicaciones móviles</a></li>
+                                    <li><a href="#">Logística y monitoreo de flotillas</a></li>
+                                    <li><a href="#">Software para captura y consulta sobre ERP's</a></li>
+                                    <li><a href="#">Mantenimiento de DB y minería de datos</a></li>
+                                </ul>
+
+                            </section>
+                            <section class="4u 12u$(medium)">
+                                <h3>Industrias</h3>
+                                <ul class="unstyled">
+                                    <li><a href="#">Automotriz</a></li>
+                                    <li><a href="#">Tiendas Minoristas</a></li>
+                                    <li><a href="#">Bancos y servicios financieros</a></li>
+                                    <li><a href="#">Manufactura</a></li>
+                                    <li><a href="#">PyMES</a></li>
+                                </ul>
+                            </section>
+                            <section class="4u 12u$(medium)">
+                                <h3>Tecnologías</h3>
+                                <ul class="unstyled">
+                                    <li><a href="#">iOS-Android</a></li>
+                                    <li><a href="#">SAP-Microsoft Dynamics</a></li>
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">SaaS-IoT</a></li>
+                                    <li><a href="#">SQL-Oracle</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                    </section>
                     <div class="row">
-                        <section class="4u 12u$(medium)">
-                            <h3>Aplicaciones</h3>
-                            <ul class="unstyled">
-                                <li><a href="#">Implementación de web-services</a></li>
-                                <li><a href="#">Desarrollo de aplicaciones móviles</a></li>
-                                <li><a href="#">Logística y monitoreo de flotillas</a></li>
-                                <li><a href="#">Software para captura y consulta sobre ERP's</a></li>
-                                <li><a href="#">Mantenimiento de DB y minería de datos</a></li>
-                            </ul>
+                        <div class="8u 12u$(medium)">
+                            <ul class="copyright">
+                                <li>&copy; LinSys. México 2016.</li>
+                                <li>Desarrollo: <a href="mailto:webmaster@linsys.com.mx">webmaster@linsys.com.mx</a></li>
 
-                        </section>
-                        <section class="4u 12u$(medium)">
-                            <h3>Industrias</h3>
-                            <ul class="unstyled">
-                                <li><a href="#">Automotriz</a></li>
-                                <li><a href="#">Tiendas Minoristas</a></li>
-                                <li><a href="#">Bancos y servicios financieros</a></li>
-                                <li><a href="#">Manufactura</a></li>
-                                <li><a href="#">PyMES</a></li>
                             </ul>
-                        </section>
-                        <section class="4u 12u$(medium)">
-                            <h3>Tecnologías</h3>
-                            <ul class="unstyled">
-                                <li><a href="#">iOS-Android</a></li>
-                                <li><a href="#">SAP-Microsoft Dynamics</a></li>
-                                <li><a href="#">Facebook</a></li>
-                                <li><a href="#">SaaS-IoT</a></li>
-                                <li><a href="#">SQL-Oracle</a></li>
+                        </div>
+                        <div class="4u$ 12u$(medium)">
+                            <ul class="icons">
+                                <li>
+                                    <a class="icon rounded fa-facebook" href="http://facebook.com/LinsysMX"><span class="label">Facebook</span></a>
+                                </li>
+                                <li>
+                                    <a class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
+                                </li>
+                                <li>
+                                    <a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
+                                </li>
+                                <li>
+                                    <a class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
+                                </li>
                             </ul>
-                        </section>
-                    </div>
-                </section>
-                <div class="row">
-                    <div class="8u 12u$(medium)">
-                        <ul class="copyright">
-                            <li>&copy; LinSys. México 2016.</li>
-                            <li>Desarrollo: <a href="mailto:webmaster@linsys.com.mx">webmaster@linsys.com.mx</a></li>
-
-                        </ul>
-                    </div>
-                    <div class="4u$ 12u$(medium)">
-                        <ul class="icons">
-                            <li>
-                                <a class="icon rounded fa-facebook" href="http://facebook.com/LinsysMX"><span class="label">Facebook</span></a>
-                            </li>
-                            <li>
-                                <a class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
-                            </li>
-                            <li>
-                                <a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
-                            </li>
-                            <li>
-                                <a class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
-                            </li>
-                        </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
 
-	</body>
+</body>
 </html>
