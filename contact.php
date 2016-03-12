@@ -14,7 +14,7 @@
         if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // Set a 400 (bad request) response code and exit.
             http_response_code(400);
-            echo "Oops! There was a problem with your submission. Please complete the form and try again.";
+            echo "Por favor completa el formulario e inténtalo de nuevo.";
             exit;
         }
 
