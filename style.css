@@ -1731,7 +1731,7 @@ img{
 }
 .blog-banner-area .breadcrumb > li + li::before {
 	color: #ccc;
-	content: "/Ã‚Â ";
+	content: "/";
 	padding: 0 0px;
 }
 #blog{
