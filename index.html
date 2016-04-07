@@ -776,7 +776,7 @@ function Circle() {
         <div class="col-md-8 col-sm-6 col-xs-12">
           <div class="contact-right wow fadeInRight">
             <h2>Send a message</h2>
-            <form action="" class="contact-form">
+            <form action="contact.php" method="post" id="ajax-contact" class="contact-form">
               <div class="form-group">                
                 <input type="text" class="form-control" placeholder="Name">
               </div>
@@ -788,6 +788,11 @@ function Circle() {
               </div>
               <button type="submit" data-text="SUBMIT" class="button button-default"><span>SUBMIT</span></button>
             </form>
+
+              <div id="form-messages"></div>
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+                                    <script src="assets/js/main.js"></script>
+
           </div>
         </div>
       </div>
