@@ -778,13 +778,13 @@ function Circle() {
             <h2>Send a message</h2>
             <form action="contact.php" method="post" id="ajax-contact" class="contact-form">
               <div class="form-group">                
-                <input type="text" class="form-control" placeholder="Name">
+                <input type="text" id="name" class="form-control" placeholder="Name">
               </div>
               <div class="form-group">                
-                <input type="email" class="form-control" placeholder="Enter Email">
+                <input type="email" id="email" class="form-control" placeholder="Enter Email">
               </div>              
               <div class="form-group">
-                <textarea class="form-control"></textarea>
+                <textarea class="form-control" id="message" placeholder="Write your Message"></textarea>
               </div>
               <button type="submit" data-text="SUBMIT" class="button button-default"><span>SUBMIT</span></button>
             </form>
