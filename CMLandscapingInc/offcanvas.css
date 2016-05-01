@@ -7,8 +7,9 @@ body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
 body {
+margin-top: 70px;
    width: auto;
-    height: auto;
+    height:100%;
   background-image:url("CM Landscapes INC.png");    
     background-attachment: fixed;
     background-repeat: repeat-x;
