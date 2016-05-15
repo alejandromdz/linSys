@@ -18,9 +18,11 @@ footer {
 }
 
 .jumbotron 
-{
+{ text-align: center;
+    position: 0px auto;
     background-color:transparent;
 }
+
 .jumbotron h1
 {
     font-family:'Lobster', cursive;
