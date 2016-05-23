@@ -22,6 +22,7 @@ footer {
 { text-align: center;
     position: 0px auto;
     background-color:transparent;
+   
 }
 
 .jumbotron h1
@@ -40,6 +41,13 @@ footer {
     
     box-shadow: 5px 5px 10px #888888;
     
+}
+
+.row .fixedHeight
+{
+    
+    height: 220px;
+    overflow: hidden;
 }
 .row h2, .row p
 {
