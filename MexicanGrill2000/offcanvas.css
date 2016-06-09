@@ -2,21 +2,43 @@
  * Style tweaks
  * --------------------------------------------------
  */
-html,
+html
+{
+    
+padding: 0px !important;
+    margin:0px !important;    
+}
 body {
-    background-color:#F9FF56;
+    
     color:#00846F;
   overflow-x: hidden; /* Prevent scroll on narrow devices */
+
+  
 }
 
-body {
-  padding-top: 70px;
+.container {
+padding: 0px !important;
+    margin:0px !important;
 }
 
 footer {
     color:black;
   padding: 30px 0;
 }
+
+.navbar-brand
+{
+    font-family: 'Lobster';
+}
+
+#section1{
+    
+    background-color: darkslategray !important;
+      width:100% !important;
+      margin: 0 auto !important;
+}
+
+
 
 .jumbotron 
 { text-align: center;
@@ -28,13 +50,13 @@ footer {
 .jumbotron h1
 {
     font-family:'Lobster', cursive;
-    color: black;
+    color: white;
 }
 
 .jumbotron p
 {
    font-family: 'Shadows Into Light', cursive;
-    color: black;
+    color: white !important;
 }
 .jumbotron img
 {
@@ -43,12 +65,7 @@ footer {
     
 }
 
-.row .fixedHeight
-{
-    
-    height: 220px;
-    overflow: hidden;
-}
+
 .row h2, .row p
 {
     font-family: 'Fjalla One', sans-serif;
