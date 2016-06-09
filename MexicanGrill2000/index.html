@@ -138,7 +138,7 @@ section .page-header{
     position:absolute;
     right:-50px;
     bottom:-130px;
-    border: solid black 1px;
+   
     border-top: solid  crimson 20px;
     border-radius: 5px;
     background-color:aliceblue;
@@ -149,7 +149,8 @@ section .page-header{
     
        -webkit-box-shadow: 0 10px 6px -6px #777;
 	      -moz-box-shadow: 0 10px 6px -6px #777;
-	           box-shadow: 0 10px 6px -6px #777;
+	       -ms-box-shadow: 0 10px 6px -6px #777;
+               box-shadow: 0 10px 6px -6px #777;
     
     
 }
@@ -161,21 +162,12 @@ section .page-header{
     }
      .container.map .hours li
     {
-        
         font-family: 'Fjalla One', sans-serif;
         list-style-type: none;
         color: black;
         font-size: 0.9em;
-    }
-    
-    .container .site
-    {
-        z-index: -1;
-    }
-    
- 
-    
-    
+       margin-left:-40px;
+    } 
 	
 footer{
 		display:inline-block;
