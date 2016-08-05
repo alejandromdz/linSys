@@ -19,10 +19,10 @@
 define('DB_NAME', '');
 
 /** Tu nombre de usuario de MySQL */
-define('DB_USER', '');
+define('DB_USER', 'i_sarquitectos');
 
 /** Tu contraseña de MySQL */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'helloween');
 
 /** Host de MySQL (es muy probable que no necesites cambiarlo) */
 define('DB_HOST', '');
