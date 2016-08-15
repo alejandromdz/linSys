@@ -1,0 +1,54 @@
+<!doctype>
+<html>
+<head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/carousel.jquery.js">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    
+<script>
+    
+    $(document).ready(function()
+    {
+        $('#margin').carousel('#previous','#next');
+        $('header h2').hide().fadeIn(2000);
+        setInterval(function(){$('#next').click();},5000);
+ 
+    })
+    </script>
+    </head>
+    <body>
+    <header>
+       <figure>
+        <img id="logo" src="css/images/logo.png">
+        </figure>
+        <h1>          Islas &amp; Serrano Arquitectos</h1>
+        <h2>Dise&ntilde;ando espacios, cumpliendo sue&ntilde;os.</h2>
+        </header>
+        
+    <section>
+        
+    <div id="margin">
+        <ul>
+            <li><img src="css/images/showcase-01.jpg"></li>
+            <li><img src="css/images/showcase-02.jpg"></li>
+            <li><img src="css/images/showcase-03.jpg"></li>
+            <li><img src="css/images/showcase-04.jpg"></li>
+            <li><img src="css/images/showcase-05.jpg"></li>
+            <li><img src="css/images/showcase-06.jpg"></li>
+
+        </ul>
+        
+        </div>
+        <a href="#" id="previous">&laquo;</a>
+        <a href="#" id="next">&raquo;</a>
+        </section>
+        <aside>
+        </aside>
+        <footer>
+        </footer>
+    </body>
+</html>

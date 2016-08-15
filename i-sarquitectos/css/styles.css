@@ -1,0 +1,112 @@
+a#next{
+    right: -35px;
+    position: absolute;
+}
+    a#next:hover{
+        
+        background-color: #ababab;
+        color:black;
+        right: -45px;
+    }
+a#previous{
+    left: -35px;
+    position: absolute;
+}
+    a#previous:hover{
+        background-color: #ababab;
+        color:black;
+        left: -45px;
+    }
+
+header {
+    margin-top: -50px;
+    margin-left: 100px;
+   
+}
+
+header h1{
+    white-space: pre;
+    font-family: 'Poiret One', cursive;
+    text-decoration: underline;
+     color:#088;
+}
+header h2{
+    color:#088;
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.95em;
+    margin-left: 115px;
+    margin-top: -15px;
+
+}
+section {
+  
+    margin: 10px auto;
+    width:90%;
+    text-align: center;
+    position:relative;
+    
+}
+
+section a{
+    background-color: #ededed;
+    border-radius: 50%;
+    color:#444;
+    font-size: 5em;
+    line-height: 60px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    top:50%;
+    width: 72px;
+    z-index: 2;
+}
+
+section a,#margin
+{
+    display:inline-block;
+    vertical-align: middle;
+}
+
+#logo{
+   
+    width:140px; /* you can use % */
+    height: auto;
+    position: relative;
+    top:77px;
+    left:-55px;
+
+}
+
+#margin
+{
+    width:90%;
+    border:10px solid white;
+    overflow: hidden;
+    position:relative;
+    border-radius: 4px;
+    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.3);
+    z-index:5;
+}
+
+#margin ul{
+    margin:0;
+    padding:0;
+    position: relative;
+    width: 1000px;
+}
+
+#margin li{
+    background-color: #088;
+    font-size: 30px;
+    float:left;
+    height: 600px;
+    line-height:167px;
+    list-style:none;
+    margin:0;
+    position: relative;
+    width:1010px;
+    
+}
+#margin li img{
+    width: 100%;
+    height: 100%;
+}
