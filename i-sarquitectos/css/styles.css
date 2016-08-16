@@ -22,6 +22,8 @@ nav,nav div{
 }
 
 #navbar li a{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3em;
     color:black;
 }
 
