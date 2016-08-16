@@ -1,6 +1,10 @@
+section{
+    margin-top:-21px;
+}
+
 #myCarousel div
 {
-    border:10px solid #088;
+    background-color:#088;
     overflow: hidden;
   
 }
@@ -10,6 +14,15 @@
     margin: auto;
     margin-top:-200px;
     
+}
+
+nav,nav div{
+    
+    background-color:#a50052; 
+}
+
+#navbar li a{
+    color:black;
 }
 
 
