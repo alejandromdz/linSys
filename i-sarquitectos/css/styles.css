@@ -1,5 +1,7 @@
 section h1,section p{
+    font-family: 'Comfortaa', cursive;
     padding-left: 50px;
+   
 }
 section#contact{
     background-color:#ff6666 ;
@@ -7,7 +9,7 @@ section#contact{
 }
 
 
-#myCarousel div
+#myCarousel>div
 {
     background-color:#088;
     overflow: hidden;
@@ -19,6 +21,10 @@ section#contact{
     margin: auto;
     margin-top:-200px;
     
+}
+#myCarousel h1{
+    font-family: 'Comfortaa', cursive;
+    text-shadow: 8px 8px 5px #000000;
 }
 
 nav,nav div, .navbar{
@@ -42,23 +48,27 @@ header {
    
 }
 
-header h1,footer p{
+header h1{
+    padding-top: 6px;
     margin-left: -35px;
-    white-space: pre;
+    white-space: pre-wrap;
     font-family: 'Poiret One', cursive;
     text-decoration: underline;
-     color:#088;
+    color:#088;  
+    font-size: 1.8em;
+    line-height: 1.5em
 }
+
+
+
 header h2{
     color:#088;
     font-family: 'Comfortaa', cursive;
     font-size: 0.95em;
-    margin-left: 115px;
+    margin-left: 88px;
     margin-top: -5px;
 
 }
-
-
 
 
 #logo{
@@ -70,13 +80,18 @@ header h2{
     left:-55px;
 }
 
-footer{
+
+
+footer p{
     padding-top: 15px;
     padding-left: 30px;
+    font-family: 'Poiret One', cursive;
+     color:#088;     
 }
+
 p.social-fb
 {
-    background: url(images/icons-social-fb.png) 0 0 no-repeat;
+    background: url(images/icons-social-fb.png) 10px 0px no-repeat;
     background-size: 50px;
     line-height: 50px;
 }
