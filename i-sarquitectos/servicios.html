@@ -2,12 +2,25 @@
 <html>
 <head>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/start/jquery-ui.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    
+<style>
+    #header h1{
+        padding:  2em 0;
+    }
+     #carousel{
+        width:90%;
+    }
+    </style>
+    
+    
     
     
 <script>
@@ -15,6 +28,9 @@
     $(document).ready(function()
     {
 $('header h2').hide().fadeIn(3000);
+        $('#accordion').accordion({
+             heightStyle: "content"
+        });
     })
     </script>
     </head>
@@ -23,7 +39,7 @@ $('header h2').hide().fadeIn(3000);
        <figure>
         <img id="logo" src="css/images/logo.png">
         </figure>
-        <h1>          Islas &amp; Serrano Arquitectos</h1>
+        <h1>            Islas &amp; Serrano Arquitectos</h1>
         <h2>Dise&ntilde;ando espacios, cumpliendo sue&ntilde;os.</h2>
         </header>
         
@@ -53,14 +69,42 @@ $('header h2').hide().fadeIn(3000);
         </div><!--/.container-fluid -->
       </nav>
         
+    <section id="main">
+        <div id="header" class="col-md-4 left-col">
+            <h1>Nuestros Servicios:</h1>
+        </div>
+        <div id="accordion" class="col-md-8 right-col">
+        <h1>Dise&ntilde;o Arquitect&oacute;nico</h1>
+<p>En este proceso a trav&eacute;s de las referencias que nos brindes; como arquitectos te proporcionaremos una propuesta de dise&ntilde;o de lo que podr&iacute;a ser tu proyecto reflejado en im&aacute;genes y planos, se entrega un anteproyecto y finalmente se genera el proyecto ejecutivo el cual te permitir&aacute; convertir el proyecto en realidad.</p>
+
+ <h1>Interiorismo Arquitect&oacute;nico</h1>
+<p>Todos hacemos uso de una habitaci&oacute;n para dormir, una oficina para trabajar, etc. pero lo que permite que nos apropiemos del espacio es el dise&ntilde;o interior, que no es mas que tus gustos, las sensaciones que quieres tener en cada espacio interpretados por el conocimiento y experiencia del interiorista y como consecuencia el uso de materiales, mobiliario, iluminaci&oacute;n y ambientaci&oacute;n adecuadas que hacen &uacute;nico cada uno de tus espacios.</p>
+
+ <h1>Dise&ntilde;o de Jardines</h1>
+<p>Las &aacute;reas verdes son un detalle que se puede aprovechar para lograr un mayor impacto en una casa-habitaci&oacute;n o en edificios de oficinas, etc. sin embargo se tiene la falsa idea que se necesita mucho espacio o que los gastos de mantenimiento son muy altos; con el an&aacute;lisis correcto podr&aacute;s tener el &Aacute;rea verde que mejor funcione sin ninguna desventaja.</p>
+
+ <h1>Presupuestos</h1>
+<p>Lo elaboramos sobre proyecto ejecutivo.</p>
+
+ <h1>Proyectos Ejecutivos</h1>
+<p>Incluye todos los planos necesarios para la construcci&oacute;n, desde las instalaciones b&aacute;sicas hasta las instalaciones especiales necesaria y los detalles; aclarar cada punto para hacer posible su ejecuci&oacute;n.</p>
         
-    <section>
-        
-   
-  </div>
+ <h1>Maquetas Virtuales</h1>
+<p>Por medio de los softwares adecuados creamos im&aacute;genes que parecieran fotograf&iacute;as de un proyecto, mostr&aacute;ndonos de mejor forma los detalles del mismo.</p>
+
+ <h1>Remodelaciones</h1>
+<p>Algunos espacios por el uso pueden perder su buena condici&oacute;n e imagen que hacen necesario la remodelaci&oacute;n.</p>
+
+ <h1>Ampliaciones</h1>
+<p>Si necesitas mayor espacio podr&iacute;as considerar la posibilidad de una ampliaci&oacute;n</p>
+
+ <h1>Administraci&oacute;n de Obra</h1>
+<p>Una vez que se tiene el proyecto ejecutivo y que se ha decidido ejecutar el proyecto, nos encargamos desde el tramite de licencia, contratos de electricidad, contrato de agua potable y drenaje, nos aseguramos de tener la mano de obra necesaria y los proveedores de material; buscamos cumplir con la ejecuci&oacute;n en tiempo y forma programado, as&iacute; pues el due&ntilde;o estar&aacute; tan involucrado en el proyecto como lo desee.</p>
+
+     <h1>Supervisi&oacute;n de Obra</h1>
+<p>Nos aseguramos de revisar que se siga la ejecuci&oacute;n del proyecto de acuerdo al dise&ntilde;o y las especificaciones t&eacute;cnicas, resolvemos las dudas que puedan surgir con la interpretaci&oacute;n del proyecto en obra con el maestro alba&ntilde;il. Se realiza por medio de visitas peri&oacute;dicas durante la construcci&oacute;n y manteniendo contacto por cualquier imprevisto que pueda surgir proponiendo soluciones. Sin embargo no nos involucramos en temas como mano de obra, surtir materiales o cumplir con tiempo programado de ejecuci&oacute;n ya que ello depender&aacute; del encargado de la obra.</p>
+        </div>
         </section>
-        <aside>
-        </aside>
 <section id="contact">
             <div class="container wrapper">
 			<div class="row">

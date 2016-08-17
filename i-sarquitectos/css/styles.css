@@ -4,6 +4,7 @@ section h1,section p{
    
 }
 section#contact{
+    clear:both;
     background-color:#ff6666 ;
     color:black;
 }
@@ -98,3 +99,5 @@ p.social-fb
 p.social-fb a{
     padding-left: 20px;
     text-decoration: none;}
+
+
