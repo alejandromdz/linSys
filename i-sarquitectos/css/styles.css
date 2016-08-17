@@ -1,6 +1,11 @@
-section{
-    margin-top:-21px;
+section h1,section p{
+    padding-left: 50px;
 }
+section#contact{
+    background-color:#ff6666 ;
+    color:black;
+}
+
 
 #myCarousel div
 {
@@ -16,9 +21,12 @@ section{
     
 }
 
-nav,nav div{
+nav,nav div, .navbar{
     
     background-color:#a50052; 
+    
+    margin-bottom: 0px;
+    border:0px;
 }
 
 #navbar li a{
@@ -34,7 +42,7 @@ header {
    
 }
 
-header h1{
+header h1,footer p{
     margin-left: -35px;
     white-space: pre;
     font-family: 'Poiret One', cursive;
@@ -55,9 +63,23 @@ header h2{
 
 #logo{
    
-    width:140px; /* you can use % */
+    width:140px; 
     height: auto;
     position: relative;
     top:77px;
     left:-55px;
+}
 
+footer{
+    padding-top: 15px;
+    padding-left: 30px;
+}
+p.social-fb
+{
+    background: url(images/icons-social-fb.png) 0 0 no-repeat;
+    background-size: 50px;
+    line-height: 50px;
+}
+p.social-fb a{
+    padding-left: 20px;
+    text-decoration: none;}
