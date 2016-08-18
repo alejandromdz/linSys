@@ -5,21 +5,28 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </script>
+    
+    <script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
+    
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <style>
     
-#main {
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.css" />
 
-	padding: 70px 0;
+    <style>
+        #map{
+            height: 300px;
+        }
+#main {
+	padding: 20px 0;
 	width: 100%;
 }
 
 .contact-right{
 
-	padding: 30px 40px;
+	padding: 30px 0;
 	width: 100%;
     margin:auto;
 }
@@ -52,25 +59,25 @@
 } 
 .contact-form .form-control::-webkit-input-placeholder {
     font-family: 'Comfortaa', cursive;
-	color: #e2e2e2;
+	color: #a2a2a2;
 	font-size: 1em;
 }
 
 .contact-form .form-control:-moz-placeholder { /* Firefox 18- */
     font-family: 'Comfortaa', cursive;
-	color: #e2e2e2;
+	color: #a2a2a2;
 	font-size: 1em; 
 }
 
 .contact-form .form-control::-moz-placeholder {  /* Firefox 19+ */
     font-family: 'Comfortaa', cursive;
-	color: #e2e2e2;
+	color: #a2a2a2;
 	font-size: 1em; 
 }
 
 .contact-form .form-control:-ms-input-placeholder { 
     font-family: 'Comfortaa', cursive;
-	color: #e2e2e2;
+	color: #a2a2a2;
 	font-size: 1em; 
 }
 .contact-form button {
@@ -90,6 +97,13 @@
 .contact-form .button-default > span {
 	padding: 12px 40px;  
 }
+        #pop{
+            width:200px;
+            line-height: 0px;
+        }
+        #pop h1{
+            font-size: 2.2em;
+        }
     </style>
     
 <script>
@@ -158,8 +172,7 @@ Cont&aacute;ctanos
             </form>
 <br>
               <div id="form-messages"></div>
-                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-                                    <script src="assets/js/main.js"></script>
+                    
 
           </div>
             </div>
@@ -177,9 +190,21 @@ Tel&eacute;fono
         <p>
 (771) 28-5-40-91
         </p>
-            <br>
             </div>
-        
+        <div id="map"  class="col-md-4 col-sm-6 col-xs-12">
+                                      
+                                        <script>
+
+                                            var map = L.map('map').setView([20.1159, -98.7553], 16);
+                        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                         }).addTo(map);
+
+                                            L.marker([20.11592, -98.75325]).addTo(map)
+                .bindPopup('<div id="pop"><h1>i&sarquitectos</h1><p>Av. del Palmar #106 A, 2do. Piso, <p/><p>Despacho E, Colonia Rojo G&oacute;mez</p><div>').openPopup();
+
+                                        </script>
+                                    </div>
         </section>
 
 <section id="contact">
