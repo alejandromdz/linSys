@@ -1,8 +1,14 @@
 section h1,section p{
     font-family: 'Comfortaa', cursive;
-    padding-left: 50px;
-   
+
 }
+
+section{
+    padding: 25px;
+}
+
+
+
 section#contact{
     clear:both;
     background-color:#088 ;
@@ -82,7 +88,7 @@ p.social-fb
     line-height: 50px;
 }
 p.social-fb a{
-    padding-left: 20px;
+    padding-left: 74px;
     text-decoration: none;}
 
 
