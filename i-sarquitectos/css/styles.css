@@ -5,28 +5,10 @@ section h1,section p{
 }
 section#contact{
     clear:both;
-    background-color:#ff6666 ;
+    background-color:#a50052 ;
     color:black;
 }
 
-
-#myCarousel>div
-{
-    background-color:#088;
-    overflow: hidden;
-  
-}
-
-#myCarousel img{
-    max-width: 900px;
-    margin: auto;
-    margin-top:-200px;
-    
-}
-#myCarousel h1{
-    font-family: 'Comfortaa', cursive;
-    text-shadow: 8px 8px 5px #000000;
-}
 
 nav,nav div, .navbar{
     
