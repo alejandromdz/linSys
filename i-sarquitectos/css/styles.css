@@ -5,10 +5,12 @@ section h1,section p{
 }
 section#contact{
     clear:both;
-    background-color:#a50052 ;
+    background-color:#088 ;
     color:black;
 }
-
+section#contact a{
+    color:floralwhite;
+}
 
 nav,nav div, .navbar{
     
@@ -69,6 +71,7 @@ footer p{
     padding-top: 15px;
     padding-left: 30px;
     font-family: 'Poiret One', cursive;
+    font-size:1.8em;
      color:#088;     
 }
 
