@@ -13,9 +13,56 @@
     
 <script>
     
+ 
+    
+    
+    
     $(document).ready(function()
     {
 $('header h2').hide().fadeIn(3000);
+        
+         $('#nav').affix({
+    offset: {
+        top: 210
+    }
+});
+     
+        
+        var ajaxResponse;
+        $.getJSON( "https://www.googleapis.com/blogger/v2/blogs/1021963485834895175/posts?callback=?&key=AIzaSyCTj4HokYHMvFDlRkQ2kDVw6lPWK_HxxAI", function( data ) {
+            ajaxResponse=data;
+            
+            var posts=[];
+
+ $.each( data.items, function( key, val ) {
+ posts.push( '<li class="post"><a href="' +val.url+'">'+ val.title + "</a></li>" );
+ });
+     $( "<ul/>", {
+    "class": "post-list",
+    html: posts.join("")
+  }).appendTo( "#content" );
+     
+  });
+        
+        
+        $('#content').on('click','.post',function(evt){
+            evt.preventDefault();
+            
+             var index=$(this).index();
+             var ajaxURL=ajaxResponse.items[index].selfLink;
+            ajaxURL+='?callback=?&key=AIzaSyCTj4HokYHMvFDlRkQ2kDVw6lPWK_HxxAI';
+        
+            
+            $.getJSON( ajaxURL, function( data ) {
+            console.log(data);
+                var textHTML=data.content;
+                console.log(textHTML);
+            $('#content').html(textHTML);
+            });
+            
+        })
+        
+        
     });
     
     </script>
@@ -30,7 +77,7 @@ $('header h2').hide().fadeIn(3000);
         </header>
         
         
-        <nav class="navbar navbar-default">
+        <nav id="nav" class="navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
@@ -56,7 +103,8 @@ $('header h2').hide().fadeIn(3000);
       </nav>
         
         
-    <section>
+    <section id="main">
+        <div id="content"></div>
         </section>
 
 
@@ -83,3 +131,9 @@ $('header h2').hide().fadeIn(3000);
     </footer>
     </body>
 </html>
+
+
+
+
+
+

@@ -52,13 +52,25 @@
   }
 }
         
+     
+        
     </style>
 <script>
     
     $(document).ready(function()
     {
 $('header h2').hide().fadeIn(3000);
-    })
+   
+        $('#nav').affix({
+    offset: {
+        top: 210
+    }
+});
+        
+    
+});
+    
+
     </script>
     </head>
     <body>
@@ -71,7 +83,7 @@ $('header h2').hide().fadeIn(3000);
         </header>
         
         
-        <nav class="navbar navbar-default">
+        <nav id="nav" class="navbar navbar-default" data-spy="affix">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">

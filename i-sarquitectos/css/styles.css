@@ -1,10 +1,16 @@
+.affix {
+      top: 0;
+      width: 100%;
+         z-index: 100;
+  }
+
 section h1,section p{
     font-family: 'Comfortaa', cursive;
 
 }
 
 section{
-    padding: 25px;
+    padding: 15px;
 }
 
 section#contact{
@@ -13,9 +19,9 @@ section#contact{
     color:black;
 }
 
-nav,nav div, .navbar{
-    
-    background-color:#a50052; 
+nav, .navbar{
+    border-radius: 0;
+    background-color:rgba(165,0,82,0.8); 
     
     margin-bottom: 0px;
     border:0px;
@@ -29,7 +35,7 @@ nav,nav div, .navbar{
 
 
 header {
-    margin-top: -50px;
+    margin-top: -20px;
     margin-left: 100px;
    
 }
