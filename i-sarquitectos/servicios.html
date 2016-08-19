@@ -13,29 +13,52 @@
     <link rel="stylesheet" href="css/styles.css">
     
 <style>
+    
     #header h1{
-        padding:  2em 0;
+        display: block;
+        background-color: #ddd;
+        padding:  0.5em 0;
+        width:100%;
+        text-align: center;
+    }
+    
+    #accordion{
+            max-width: 800px;
+
     }
     #accordion figure{
-        width:100%;
+        width: 100%;
         overflow: hidden;
+       margin: 1.4em 0;
     }
         
     #accordion h1{
+        background:#555;
+        border-color:black;
      border-radius: 10px;
-    width:95%;
+        width:100%;
         font-size: 1.2em;
     }
     #accordion h1.ui-state-active{
+        background:#088;
          border-radius: 15px 15px 0 0;
      
     }
     
     #accordion div
     {
-    border-radius: 0 0 15px 15px;
-      width:95%;  
+        width: 100%;
+    border-radius: 0 0 15px 15px;  
     }
+   #main *{
+        margin-left:auto;
+       margin-right:auto;
+    }
+    #main{padding: 0;
+    
+    }
+    #main #header
+    {margin-top:-20px;}
      
     </style>
     
@@ -98,10 +121,10 @@ $('header h2').hide().fadeIn(3000);
       </nav>
         
     <section id="main">
-        <div id="header" class="col-md-4 left-col">
+        <div id="header" >
             <h1>Nuestros Servicios:</h1>
         </div>
-        <div id="accordion" class="col-md-8 right-col">
+        <div id="accordion" >
         <h1>Dise&ntilde;o Arquitect&oacute;nico</h1>
             <div>
                 <figure>
