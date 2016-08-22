@@ -4,12 +4,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script src="js/instafeed.min.js">
     </script>
+    
+    
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    
+    <style>
+        #viewer img{width:350px;}
+        @media (max-width: 767px) {
+  #viewer img{width:90%;}
+}
+    </style>
     
 <script>
     $(document).ready(function()
@@ -22,6 +31,36 @@ $('header h2').hide().fadeIn(3000);
     }
 });
         
+        
+        $.ajaxPrefilter( function (options) {
+  if (options.crossDomain && jQuery.support.cors) {
+    var http = (window.location.protocol === 'http:' ? 'http:' : 'https:');
+    options.url = http + '//cors-anywhere.herokuapp.com/' + options.url;
+    //options.url = "http://cors.corsproxy.io/url=" + options.url;
+  }
+});
+
+$.get('https://www.instagram.com/islasyserrano/',function (response) {
+    var data=/(window\._sharedData\s?=\s?)(.+)(?=;<\/script>)/g.exec(response)[2]
+        console.log("> ", data);
+    handleResponse(eval("("+data+")"));
+});
+    function handleResponse(data){
+        var content=data.entry_data.ProfilePage[0].user.media.nodes;
+        console.log(content);
+        $.each(content,function(index,value){
+            var textHTML='<div class="col-xs-12 col-sm-6 col-lg-4"><img src="'+value.thumbnail_src+'">'
+             textHTML+='<p>'+value.caption+'</p></div>';
+            if(index==1||index==3||index==5||index==7||index==9){
+                 textHTML+='<div class="clearfix visible-sm-block"></div>';
+            }
+            if(index==2||index==5||index==8){
+                 textHTML+='<div class="clearfix visible-lg-block"></div>';
+            }
+            $('#viewer .row').append(textHTML);
+        });
+    
+    }    
     
 });
     </script>
@@ -59,7 +98,12 @@ $('header h2').hide().fadeIn(3000);
         </div><!--/.container-fluid -->
       </nav>
         
-   
+   <section id="viewer">
+   <div class="row">
+       </div>
+        </section>
+        
+        
 <section id="contact">
             <div class="container wrapper">
 			<div class="row">
@@ -77,9 +121,11 @@ $('header h2').hide().fadeIn(3000);
 		</div>
         </section>
           <footer>
-      <div class="container ">
+     
         <p>Islas &amp; Serrano Arquitectos &copy; 2016</p>
-      </div>
+     
     </footer>
+        
+       
     </body>
 </html>
