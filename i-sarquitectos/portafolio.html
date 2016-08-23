@@ -43,7 +43,7 @@ $('header h2').hide().fadeIn(3000);
 $.get('https://www.instagram.com/islasyserrano/',function (response) {
     var data=/(window\._sharedData\s?=\s?)(.+)(?=;<\/script>)/g.exec(response)[2]
         console.log("> ", data);
-    handleResponse(eval("("+data+")"));
+    handleResponse(JSON.parse(data));
 });
     function handleResponse(data){
         var content=data.entry_data.ProfilePage[0].user.media.nodes;
