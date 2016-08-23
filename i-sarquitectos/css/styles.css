@@ -37,7 +37,7 @@ nav, .navbar{
 header {
     margin-top: -60px;
     margin-left: 100px;
-   
+   background-color:white;
 }
 
 header h1{
@@ -73,7 +73,9 @@ header h2{
 }
 
 
-
+footer{
+    background-color: white;
+}
 footer p{
     padding-top: 15px;
     padding-left: 30px;
@@ -93,5 +95,15 @@ p.social-fb a{
     text-decoration: none;
 color:floralwhite;
 }
+
+
+.affix {
+     top: 0;
+      width: 100%;
+  }
+.affix+section {
+       padding-top: 60px;
+    
+  }
 
 

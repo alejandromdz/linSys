@@ -5,6 +5,7 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/parallax.min.js"></script>
 
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/start/jquery-ui.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +17,6 @@
     
     #header h1{
         display: block;
-        background-color: #ddd;
         padding:  0.5em 0;
         width:100%;
         text-align: center;
@@ -35,7 +35,7 @@
     #accordion h1{
         background:#555;
         border-color:black;
-     border-radius: 10px;
+        border-radius: 10px;
         width:100%;
         font-size: 1.2em;
     }
@@ -45,21 +45,54 @@
      
     }
     
-    #accordion div
+    #accordion>div
     {
+        overflow: hidden;
+        background-color:rgba(255,255,255,0.8);
         width: 100%;
-    border-radius: 0 0 15px 15px;  
+    border-radius: 0 0 15px 15px; 
+         
     }
-   #main *{
+   #main #header, #main #accordion{
         margin-left:auto;
        margin-right:auto;
+       
     }
-    #main{padding: 0;
-    
-    }
+  
     #main #header
-    {margin-top:-20px;}
-     
+    {margin-top:-20px;
+    color:black;
+    }
+    
+   
+    #main{
+        position:relative;
+  
+        
+    }
+    #background
+    {
+        background: #CCC;
+  filter: alpha(opacity=60);
+  /* IE */
+  -moz-opacity: 0.6;
+  /* Mozilla */
+  opacity: 0.6;
+  /* CSS3 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+        
+         background: url(css/images/bg.jpg);
+        background-repeat: round;
+        background-attachment: fixed;
+        z-index: -100;
+    }
+    .ui-widget-content {
+        background: none;
+    }
     </style>
     
     
@@ -82,7 +115,9 @@ $('header h2').hide().fadeIn(3000);
         $('#accordion').accordion({
              heightStyle: "content"
         });
-    })
+    });
+        
+      
     </script>
     </head>
     <body>
@@ -95,7 +130,7 @@ $('header h2').hide().fadeIn(3000);
         </header>
         
         
-        <nav id="nav" class="navbar navbar-default">
+        <nav id="nav" class="navbar navbar-default" data-spy="affix">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
@@ -120,7 +155,7 @@ $('header h2').hide().fadeIn(3000);
         </div><!--/.container-fluid -->
       </nav>
         
-    <section id="main">
+        <section id="main"><div id="background"></div>
         <div id="header" >
             <h1>Nuestros Servicios:</h1>
         </div>
@@ -197,6 +232,7 @@ $('header h2').hide().fadeIn(3000);
 <p>Nos aseguramos de revisar que se siga la ejecuci&oacute;n del proyecto de acuerdo al dise&ntilde;o y las especificaciones t&eacute;cnicas, resolvemos las dudas que puedan surgir con la interpretaci&oacute;n del proyecto en obra con el maestro alba&ntilde;il. Se realiza por medio de visitas peri&oacute;dicas durante la construcci&oacute;n y manteniendo contacto por cualquier imprevisto que pueda surgir proponiendo soluciones. Sin embargo no nos involucramos en temas como mano de obra, surtir materiales o cumplir con tiempo programado de ejecuci&oacute;n ya que ello depender&aacute; del encargado de la obra.</p>
             </div>
         </div>
+        
         </section>
 <section id="contact">
             <div class="container wrapper">
