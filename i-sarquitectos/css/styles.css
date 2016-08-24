@@ -19,6 +19,12 @@ section#contact{
     color:black;
 }
 
+#main{
+        position:relative;
+  
+        overflow: auto;
+    }
+
 nav, .navbar{
     border-radius: 0;
     background-color:rgba(165,0,82,0.8); 
