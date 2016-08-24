@@ -27,7 +27,7 @@ section#contact{
 
 nav, .navbar{
     border-radius: 0;
-    background-color:rgba(165,0,82,0.8); 
+    background-color:rgba(165,0,82,0.75); 
     
     margin-bottom: 0px;
     border:0px;
@@ -35,8 +35,21 @@ nav, .navbar{
 
 #navbar li a{
     font-family: 'Comfortaa', cursive;
-    font-size: 1.2em;
-    color:black;
+    font-size: 1em;
+    color:#222;
+}
+#navbar li a:hover{
+  color:#5dcda3;  
+}
+#navbar .active a{
+    background-color:transparent; 
+    color:#5dcda3;
+    
+}
+
+.nav>li>a {
+    padding-left: 25px;
+     padding-right: 25px;
 }
 
 
