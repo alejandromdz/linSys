@@ -28,10 +28,11 @@ section#contact{
 nav, .navbar{
     border-radius: 0;
     background-color:rgba(165,0,82,0.75); 
-    
     margin-bottom: 0px;
     border:0px;
+    z-index: 100;
 }
+
 
 #navbar li a{
     font-family: 'Comfortaa', cursive;

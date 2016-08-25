@@ -5,13 +5,75 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
-    <script src="js/instafeed.min.js">
-    </script>
-    
+    <script src="js/jquery.magnific-popup.min.js"></script>
     
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    
+    <!-- Portfolio Style -->
+	<link href="css/bootstrap-portfolio.css" rel="stylesheet">
+	
+	<!-- Font Awesome, because...it is! -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<!-- Preview Styling, You Do Not Need This -->
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:700,400italic' rel='stylesheet' type='text/css'>
+	
+	<style type="text/css">
+
+.title { 
+    background: #593F7F;
+    text-align: center; 
+    margin: 0 0 60px; 
+    padding: 30px 0; }
+.title p { 
+    color: #fff; 
+    font-family: 'Lato', sans-serif; 
+    font-size: 2em; 
+    font-weight: bold; 
+    line-height: 34px; 
+    margin: 0 0 5px; }
+.title span { 
+    color: #8483B0; 
+    font-family: 'Lato', sans-serif; 
+    font-size: 16px; 
+    font-weight: 400; 
+    font-style: italic; }
+.title-border { 
+    border: 1px solid #CDBFE3; 
+    border-radius: 10px; 
+    display: inline-block; 
+    margin: auto; 
+    padding: 20px; 
+    width: 25%; }
+.title ul { 
+    margin: auto; 
+    padding: 30px 0 0; 
+    width: 50%; }
+.title ul li { 
+    display: inline-block; 
+    margin: auto; 
+    padding: 0 10px; }
+.title ul li a { 
+    color: #CDBFE3; }
+.title ul li a:hover { 
+    color: #fff; 
+    text-decoration: none; }
+.spaced-out { 
+    float: left; 
+    padding: 40px 0; 
+    width: 100%; }
+		@media screen and (max-width: 767px) {
+			.title-border { width: 50%; }
+		}
+	</style>
+
+    
+    
     <link rel="stylesheet" href="css/styles.css">
     <style>
         #viewer img{width:350px;}
@@ -32,35 +94,7 @@ $('header h2').hide().fadeIn(3000);
 });
         
         
-        $.ajaxPrefilter( function (options) {
-  if (options.crossDomain && jQuery.support.cors) {
-    var http = (window.location.protocol === 'http:' ? 'http:' : 'https:');
-    options.url = http + '//cors-anywhere.herokuapp.com/' + options.url;
-    //options.url = "http://cors.corsproxy.io/url=" + options.url;
-  }
-});
-
-$.get('https://www.instagram.com/islasyserrano/',function (response) {
-    var data=/(window\._sharedData\s?=\s?)(.+)(?=;<\/script>)/g.exec(response)[2]
-        console.log("> ", data);
-    handleResponse(JSON.parse(data));
-});
-    function handleResponse(data){
-        var content=data.entry_data.ProfilePage[0].user.media.nodes;
-        console.log(content);
-        $.each(content,function(index,value){
-            var textHTML='<div class="col-xs-12 col-sm-6 col-lg-4"><img src="'+value.thumbnail_src+'">'
-             textHTML+='<p>'+value.caption+'</p></div>';
-            if(index==1||index==3||index==5||index==7||index==9){
-                 textHTML+='<div class="clearfix visible-sm-block"></div>';
-            }
-            if(index==2||index==5||index==8){
-                 textHTML+='<div class="clearfix visible-lg-block"></div>';
-            }
-            $('#viewer .row').append(textHTML);
-        });
-    
-    }    
+       
     
 });
     </script>
@@ -98,9 +132,63 @@ $.get('https://www.instagram.com/islasyserrano/',function (response) {
         </div><!--/.container-fluid -->
       </nav>
         
-   <section id="viewer">
-   <div class="row">
-       </div>
+   <section id="main">
+       
+       <!-- .b-portfolio-one No.1 -->
+		
+		
+					
+			<div class="col-xs-12 col-md-6 b-portfolio-four">
+					
+			<div class="b-portfolio-image with-overlay">
+						
+				<img src="css/images/Portafolio/repgina/Imagen1.jpg" class="img-responsive">
+				
+				<div class="b-portfolio-overlay box-in">
+				
+					<div class="b-portfolio-caption">
+						<div class="b-portfolio-caption-text">
+							<i class="fa fa-plus-square-o fa-2x"></i>
+						</div><!-- /. caption-text -->
+					</div><!-- /.caption -->
+							
+				</div><!-- /. overlay -->
+						
+			</div><!-- /.b-portfolio-image -->
+					
+					
+		</div>
+					
+			<div class="col-md-6 b-portfolio-text">
+				
+				<div class="col-md-6 col-sm-12">
+					<h1>Oficinas Islas-Serrano</h1>
+					
+					<p>Ocupamos una oficina como centro de organizaci&oacute;n, la cual fue adecuada como un espacio totalmente abierto, con zonas de trabajo claramente identificadas, d&aacute;ndole un lugar a cada miembro del equipo de trabajo, los colores del logo de este despacho sirvieron para darle identidad propia al espacio, donde resalta de inmediato nuestro inter&eacute;s por el detalle y la decoraci&oacute;n. Seguimos en proceso de hacer de este lugar, nuestro lugar.</p>
+				
+				</div>
+				
+				<div class="col-md-6 col-sm-12">
+					<h2>About this project</h2>
+					<ul>			
+						<li><p><span>Project Name:</span> The Serengeti</p></li>
+						<li><p><span>Company:</span> Africa Ventures</p></li>
+						<li><p><span>Project Type:</span> Landscaping</p></li>
+						<li><p><span>Completed:</span> 2014</p></li>
+					</ul>
+					
+					<div class="b-portfolio-social">						
+						<a href="#"><i class="fa fa-facebook-square fa-lg"></i></a>
+						<a href="#"><i class="fa fa-twitter-square fa-lg"></i></a>
+						<a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a>
+						<a href="#"><i class="fa fa-instagram fa-lg"></i></a>
+					</div><!-- /.b-portfolio-social -->
+				</div>
+				
+			</div><!-- /.b-portfolio-text -->
+					
+
+ 
         </section>
         
         
