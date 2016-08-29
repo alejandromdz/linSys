@@ -1,0 +1,255 @@
+<!doctype>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+    
+    <script>
+    
+    $(document).ready(function()
+    {
+$('header h2').hide().fadeIn(3000);
+   
+        $('#nav').affix({
+    offset: {
+        top: 170
+    }
+});
+        
+        var dir=location.pathname.match(/\/([^\/]+)/g);
+        var containerDir=dir[dir.length-2];
+
+        switch (containerDir){
+          
+                
+                case '/nueva-distribucion-cocina':
+                   $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>Cocina Huasca</h1><p>Se dise&ntilde;&oacute; una cocina estilo rustico que se adaptar&aacute; a la construcci&oacute;n del rancho actual;se adapt&oacute; esta cocina para generar mayor funcionalidad y flujo de movimiento de los usuarios. Tiene barra al medio para practicidad de las funciones de cocina. Este espacio puede utilizarse tanto para eventos en el jard&iacute;n como para una comida al aire libre en familia.</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>Cocina Huasca</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina-9/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina-9/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina-9/Imagen2.jpg"><img src="../../css/images/Portafolio/repgina-9/Imagen2.jpg"></a><a href="../../css/images/Portafolio/repgina-9/Imagen3.jpg"><img src="../../css/images/Portafolio/repgina-9/Imagen3.jpg"></a><a href="../../css/images/Portafolio/repgina-9/Imagen4.jpg"><img src="../../css/images/Portafolio/repgina-9/Imagen4.jpg"></a><a href="../../css/images/Portafolio/repgina-9/Imagen5.jpg"><img src="../../css/images/Portafolio/repgina-9/Imagen5.jpg"></a><a href="../../css/images/Portafolio/repgina-9/Imagen6.jpg"><img src="../../css/images/Portafolio/repgina-9/Imagen6.jpg"></a><a href="../../css/images/Portafolio/repgina-9/Imagen7.jpg"><img src="../../css/images/Portafolio/repgina-9/Imagen7.jpg"></a></div></div></div>'); 
+                
+                break;
+            case '/telesecundaria':
+                $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>Telesecundaria</h1><p>Para la fachada se hizo un dise&ntilde;o sencillo y pulcro utilizando una base clara combinado con un tono rojizo para se&ntilde;alar el acceso al inmueble. En la reja se utilizaron l&iacute;neas diagonales para romper con la monoton&iacute;a del entorno y darle movimiento a la fachada.</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>Telesecundaria</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina-10/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina-10/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina-10/Imagen2.jpg"><img src="../../css/images/Portafolio/repgina-10/Imagen2.jpg"></a><a href="../../css/images/Portafolio/repgina-10/Imagen3.jpg"><img src="../../css/images/Portafolio/repgina-10/Imagen3.jpg"></a><a href="../../css/images/Portafolio/repgina-10/Imagen4.jpg"><img src="../../css/images/Portafolio/repgina-10/Imagen4.jpg"></a><a href="../../css/images/Portafolio/repgina-10/Imagen5.jpg"><img src="../../css/images/Portafolio/repgina-10/Imagen5.jpg"></a><a href="../../css/images/Portafolio/repgina-10/Imagen6.jpg"><img src="../../css/images/Portafolio/repgina-10/Imagen6.jpg"></a><a href="../../css/images/Portafolio/repgina-10/Imagen7.jpg"><img src="../../css/images/Portafolio/repgina-10/Imagen7.jpg"></a></div></div></div>');
+                
+            
+                 break;
+            case '/centro-estatal-de-prevencion-social-contra-la-violencia':
+                $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>Centro estatal de prevenci&oacute;n social contra la violencia</h1><p>En este centro de atenci&oacute;n se utilizaron diferentes formas para unificarse en un s&oacute;lo concepto. Se implement&oacute; un jard&iacute;n vertical con la finalidad de dar textura y al mismo tiempo ser amigable con el entorno.</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>Centro estatal de prevenci&oacute;n social contra la violencia</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina-5/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina-5/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina-5/Imagen2.jpg"><img src="../../css/images/Portafolio/repgina-5/Imagen2.jpg"></a><a href="../../css/images/Portafolio/repgina-5/Imagen3.jpg"><img src="../../css/images/Portafolio/repgina-5/Imagen3.jpg"></a><a href="../../css/images/Portafolio/repgina-5/Imagen4.jpg"><img src="../../css/images/Portafolio/repgina-5/Imagen4.jpg"></a></div></div></div>');
+            
+                 break;
+            case '/showroom-canadevi-zona-plateada':
+                $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>CANADEVI</h1><p>El dise&ntilde;o se basa en la funcionalidad del inmueble, se marc&oacute; el acceso mediante diferentes materiales y texturas, cuenta con un jard&iacute;n vertical para anexar elementos de la naturaleza. Y en la parte frontal, cruzando el estacionamiento se cre&oacute; un &aacute;rea especial para conferencias, esta cuenta con juegos infantiles.</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>CANADEVI</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina-4/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina-4/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina-4/Imagen2.jpg"><img src="../../css/images/Portafolio/repgina-4/Imagen2.jpg"></a><a href="../../css/images/Portafolio/repgina-4/Imagen3.jpg"><img src="../../css/images/Portafolio/repgina-4/Imagen3.jpg"></a><a href="../../css/images/Portafolio/repgina-4/Imagen4.jpg"><img src="../../css/images/Portafolio/repgina-4/Imagen4.jpg"></a><a href="../../css/images/Portafolio/repgina-4/RENDER%20.jpg"><img src="../../css/images/Portafolio/repgina-4/RENDER%20.jpg"></a></div></div></div>');
+            
+                 break;
+            case '/remodelaciÃ³n':
+                $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>Casa Habitaci&oacute;n Vargas</h1><p>Se utiliz&oacute; un estilo moderno, ya que en la planta baja hay un negocio y el los pisos superiores es una casa habitaci&oacute;n; es por ello que la fachada tiene una volumetr&iacute;a sencilla perocuenta con los elementos arquitect&oacute;nicos necesarios para darle una imagen de frescura y dinamismo; para ello se utilizaron colores neutros como el color champagne acompa&ntilde;ados por un rojo intenso y una celos&iacute;a en color caf&eacute; simulaci&oacute;n madera que hace que el inmueble destaque del entorno</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>Casa Habitaci&oacute;n Vargas</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina-11/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina-11/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina-11/Imagen2.jpg"><img src="../../css/images/Portafolio/repgina-11/Imagen2.jpg"></a><a href="../../css/images/Portafolio/repgina-11/Imagen3.jpg"><img src="../../css/images/Portafolio/repgina-11/Imagen3.jpg"></a></div></div></div>');
+            
+                
+            break;
+            case '/fachada-casa-habitacion':
+                
+            
+                 break;
+            case '/adaptacion-cocina':
+                console.log(containerDir);
+            
+                 break;
+            case '/tienda-de-conveniencia':
+                $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>Tuzo Express</h1><p>En diferentes localidades del Estado de Hidalgo, en conjunto con la Empresa Inmodulare, se realiz&oacute; el proyecto de construcci&oacute;n y dise&ntilde;o de un total del 51 tiendas de conveniencia.</p><p>El dise&ntilde;o fue estilo colonial, utilizando colores c&aacute;lidos para crear un ambiente acogedor para el usuario. La distribuci&oacute;n de cada local se plane&oacute; de tal manera para favorecer la venta de los productos que aqu&iacute; se ofertan.</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>Tuzo Express</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina-2/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina-2/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina-2/ImagenTuzo.jpg"><img src="../../css/images/Portafolio/repgina-2/ImagenTuzo.jpg"></a><a href="../../css/images/Portafolio/repgina-2/ImagenTuzo2.jpg"><img src="../../css/images/Portafolio/repgina-2/ImagenTuzo2.jpg"></a><a href="../../css/images/Portafolio/repgina-2/Remodelacion.jpg"><img src="../../css/images/Portafolio/repgina-2/Remodelacion.jpg"></a><a href="../../css/images/Portafolio/repgina-2/Tienda.jpg"><img src="../../css/images/Portafolio/repgina-2/Tienda.jpg"></a></div></div></div>');
+            
+                 break;
+            case '/condominio-jk':
+                
+            
+                 break;
+            case '/propuesta-casa-habitacion':
+                $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>Casa Donna</h1><p>Para el dise&ntilde;o de esta casa, se consideraron varios aspectos, el principal era generar espacios con la sensaci&oacute;n de amplitud ya que las dimensiones son peque&ntilde;as.En planta baja se cre&oacute; un espacio abierto, es decir una planta libre entre sala, comedor y cocina para dar amplitud y generar una continuidad visual; adem&aacute;s se gener&oacute; un acceso independiente al jard&iacute;n lateral y se crearon vistas del interior hacia el jard&iacute;n frontal y lateral.Se utilizaron colores neutros combinados con colores como el verde generar un remate visual, adem&aacute;s se incorporaron elementos de valor sentimental para la familia en el recibidor de la casa.Se busc&oacute; una fachada conservadora, utilizando un tono neutro como el crema combinado con tonos blancos de las puertas y molduras; tambi&eacute;n se utiliz&oacute; una piedra como elemento que da jerarqu&iacute;a ya que enmarcala entrada al lugar junto con dos columnas estilo d&oacute;rico.</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>Casa Donna</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina-12/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina-12/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina-12/Imagen2.jpg"><img src="../../css/images/Portafolio/repgina-12/Imagen2.jpg"></a><a href="../../css/images/Portafolio/repgina-12/Imagen3.jpg"><img src="../../css/images/Portafolio/repgina-12/Imagen3.jpg"></a></div></div></div>');
+            
+                 break;
+            case '/remodelacion-cocina':
+                
+            $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>Cocina Mur</h1><p>Para la remodelaci&oacute;n de esta cocina se hicieron dos propuestas.Propuesta 1: se tom&oacute; como base el color blanco para hacer &eacute;nfasis en tonos lilas en texturas y formas dando la sensaci&oacute;n de un espacio limpio y amplio con un toque femenino.Propuesta 2: Se implement&oacute; una base en tonalidades c&aacute;lidas, jugando con colores beige, caf&eacute;, incorporando elementos en madera que resalten por la textura dentro espacio. Se propone crear un ambiente c&aacute;lido en esta habitaci&oacute;n.</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>Cocina Mur</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina-17/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina-17/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina-17/Imagen2.jpg"><img src="../../css/images/Portafolio/repgina-17/Imagen2.jpg"></a><a href="../../css/images/Portafolio/repgina-17/Imagen3.jpg"><img src="../../css/images/Portafolio/repgina-17/Imagen3.jpg"></a><a href="../../css/images/Portafolio/repgina-17/Imagen4.jpg"><img src="../../css/images/Portafolio/repgina-17/Imagen4.jpg"></a></div></div></div>');
+                 break;
+            case '/locales-comerciales':
+                $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>Locales OGZ</h1><p>Para estaplaza comercial, se busc&oacute; un dise&ntilde;o sencillo, moderno y din&aacute;mico; para ello se hace &eacute;nfasis en las escaleras con un elemento decorativo que sirve de remate visual y elemento rector de toda la plaza, generando de este modo un punto focal cerca de la publicidad de los negocios con la finalidad de ayudar en la promoci&oacute;n de acuerdo a su ubicaci&oacute;n.</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>Locales OGZ</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina-15/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina-15/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina-15/Imagen2.jpg"><img src="../../css/images/Portafolio/repgina-15/Imagen2.jpg"></a><a href="../../css/images/Portafolio/repgina-15/Imagen3.jpg"><img src="../../css/images/Portafolio/repgina-15/Imagen3.jpg"></a></div></div></div>');
+        
+                 break;
+            case '/interiorismo-casa-habitacion':
+                $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>Casa Ar&aacute;n</h1><p>Para esta casa de descanso y fin de semana, se busc&oacute; generar un v&iacute;nculo del interior con su entorno, para ello se trat&oacute; de sacar el mayor provecho posible de los jardines, generando vistas desde la mayor&iacute;a de sus espacios. El dise&ntilde;o hace &eacute;nfasis en las terrazas, las cuales sirven de conexi&oacute;n con el entorno y nos dan espacios &oacute;ptimos para la convivencia, para la relajaci&oacute;n, para la lectura, etc. Para el dise&ntilde;o interno se utiliz&oacute; como base tonalidades c&aacute;lidas y se agregaron remates visuales que le dieran un toque m&aacute;s din&aacute;mico y elementos modernos de decoraci&oacute;n que complementan a la perfecci&oacute;n el espacio, generando un ambiente, fresco, tranquilo y lleno de vida.</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>Casa Ar&aacute;n</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina-16/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina-16/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina-16/Imagen1_1.jpg"><img src="../../css/images/Portafolio/repgina-16/Imagen1_1.jpg"></a><a href="../../css/images/Portafolio/repgina-16/Imagen2.jpg"><img src="../../css/images/Portafolio/repgina-16/Imagen2.jpg"></a><a href="../../css/images/Portafolio/repgina-16/Imagen2_1.jpg"><img src="../../css/images/Portafolio/repgina-16/Imagen2_1.jpg"></a><a href="../../css/images/Portafolio/repgina-16/Imagen3.jpg"><img src="../../css/images/Portafolio/repgina-16/Imagen3.jpg"></a><a href="../../css/images/Portafolio/repgina-16/Imagen3_1.jpg"><img src="../../css/images/Portafolio/repgina-16/Imagen3_1.jpg"></a><a href="../../css/images/Portafolio/repgina-16/Imagen4.jpg"><img src="../../css/images/Portafolio/repgina-16/Imagen4.jpg"></a><a href="../../css/images/Portafolio/repgina-16/Imagen4_1.jpg"><img src="../../css/images/Portafolio/repgina-16/Imagen4_1.jpg"></a><a href="../../css/images/Portafolio/repgina-16/Imagen5.jpg"><img src="../../css/images/Portafolio/repgina-16/Imagen5.jpg"></a><a href="../../css/images/Portafolio/repgina-16/Imagen5_1.jpg"><img src="../../css/images/Portafolio/repgina-16/Imagen5_1.jpg"></a><a href="../../css/images/Portafolio/repgina-16/Imagen6.jpg"><img src="../../css/images/Portafolio/repgina-16/Imagen6.jpg"></a><a href="../../css/images/Portafolio/repgina-16/Imagen6_1.jpg"><img src="../../css/images/Portafolio/repgina-16/Imagen6_1.jpg"></a><a href="../../css/images/Portafolio/repgina-16/Imagen7.jpg"><img src="../../css/images/Portafolio/repgina-16/Imagen7.jpg"></a><a href="../../css/images/Portafolio/repgina-16/Imagen7_1.jpg"><img src="../../css/images/Portafolio/repgina-16/Imagen7_1.jpg"></a><a href="../../css/images/Portafolio/repgina-16/Imagen8.jpg"><img src="../../css/images/Portafolio/repgina-16/Imagen8.jpg"></a><a href="../../css/images/Portafolio/repgina-16/Imagen9.jpg"><img src="../../css/images/Portafolio/repgina-16/Imagen9.jpg"></a></div></div></div>');
+            
+                 break;
+            case '/remodelacion-de-oficina':
+               
+            
+                 break;
+            case '/remodelacion-de-casa-habitacion':
+                
+            
+                 break;
+            case '/clinica-de-ortodoncia-maagajajim':
+                
+             $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>Clinica de Ortodoncia</h1><p>Una casa-habitaci&oacute;n de m&aacute;s de 60 a&ntilde;os de antig&uuml;edad ubicada en el centro hist&oacute;rico de la ciudad de Pachuca, se remodel&oacute; para hacer una cl&iacute;nica de ortodoncia donde el principal reto, era el respet&oacute; a la esencia de la fachada s&oacute;lo haciendo cambios en color y texturas, debido a que el inmueble est&aacute; ubicado dentro de la zona de centro hist&oacute;rico de la ciudad. En el interior, como elemento decorativo a destacar se utilizaron rompecabezas,por el gusto del cliente por estos elementos. La base de este dise&ntilde;o fue el color chocolate y tonos marrones, haciendo uso de maderas y losetas en tonos cremas. Fue un dise&ntilde;o basado en la simpleza para dar el sentido de orden, amplitud e higiene.</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>Clinica de Ortodoncia</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina-19/Consultorio.jpg"><img src="../../css/images/Portafolio/repgina-19/Consultorio.jpg"></a><a href="../../css/images/Portafolio/repgina-19/Antes%20fachada%20consul.jpg"><img src="../../css/images/Portafolio/repgina-19/Antes%20fachada%20consul.jpg"></a><a href="../../css/images/Portafolio/repgina-19/domo.jpg"><img src="../../css/images/Portafolio/repgina-19/domo.jpg"></a><a href="../../css/images/Portafolio/repgina-19/Fachada%20consul.jpg"><img src="../../css/images/Portafolio/repgina-19/Fachada%20consul.jpg"></a><a href="../../css/images/Portafolio/repgina-19/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina-19/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina-19/unidades%20Lo.jpg"><img src="../../css/images/Portafolio/repgina-19/unidades%20Lo.jpg"></a></div></div></div>');
+                 break;
+            case '/sala-uno-gobierno-del-estado':
+                
+            $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>Sala de Gobierno</h1><p>Para esta sala de juntas se cre&oacute; con el objetivo atraer la atenci&oacute;n al mural, por lo que se busc&oacute; mostrarlo mediante un espejo para que pudiera ser visto desde cualquier punto de la habitaci&oacute;n; se usaron colores neutros para armonizar todo el ambiente.</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>Sala de Gobierno</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina-7/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina-7/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina-7/Imagen2.jpg"><img src="../../css/images/Portafolio/repgina-7/Imagen2.jpg"></a><a href="../../css/images/Portafolio/repgina-7/Imagen3.jpg"><img src="../../css/images/Portafolio/repgina-7/Imagen3.jpg"></a><a href="../../css/images/Portafolio/repgina-7/Imagen4.jpg"><img src="../../css/images/Portafolio/repgina-7/Imagen4.jpg"></a></div></div></div>');
+                 break;
+            case '/colegio-superior-de-odontologia':
+                $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>Colegio Superior de Odontolog&iacute;a de Hidalgo</h1><p>Se llev&oacute; a cabo la remodelaci&oacute;n de un espacio abandonado para crear una instituci&oacute;n educativa dedicada a la salud, se adapt&oacute; el espacio para la creaci&oacute;n de aulas, una cl&iacute;nica de pr&aacute;cticas, un edificio central donde hay una sala de maestros y oficinas para la direcci&oacute;n general, estacionamiento, sanitarios y espacios de esparcimiento.Uno de los objetivos era generar un espacio que cumpliera con las necesidades de los alumnos para su desarrollo profesional. El cambio del inmueble fue radical, logrando un espacio profesional.</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>Colegio Superior de Odontolog&iacute;a de Hidalgo</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina-20/Colegio%202.jpg"><img src="../../css/images/Portafolio/repgina-20/Colegio%202.jpg"></a><a href="../../css/images/Portafolio/repgina-20/Colegio.jpg"><img src="../../css/images/Portafolio/repgina-20/Colegio.jpg"></a><a href="../../css/images/Portafolio/repgina-20/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina-20/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina-20/Imagen1_1.jpg"><img src="../../css/images/Portafolio/repgina-20/Imagen1_1.jpg"></a><a href="../../css/images/Portafolio/repgina-20/Imagen2.jpg"><img src="../../css/images/Portafolio/repgina-20/Imagen2.jpg"></a><a href="../../css/images/Portafolio/repgina-20/Imagen2_1.jpg"><img src="../../css/images/Portafolio/repgina-20/Imagen2_1.jpg"></a><a href="../../css/images/Portafolio/repgina-20/Imagen3.jpg"><img src="../../css/images/Portafolio/repgina-20/Imagen3.jpg"></a><a href="../../css/images/Portafolio/repgina-20/Imagen3_1.jpg"><img src="../../css/images/Portafolio/repgina-20/Imagen3_1.jpg"></a><a href="../../css/images/Portafolio/repgina-20/Imagen4.jpg"><img src="../../css/images/Portafolio/repgina-20/Imagen4.jpg"></a><a href="../../css/images/Portafolio/repgina-20/Imagen4_1.jpg"><img src="../../css/images/Portafolio/repgina-20/Imagen4_1.jpg"></a><a href="../../css/images/Portafolio/repgina-20/Imagen5.jpg"><img src="../../css/images/Portafolio/repgina-20/Imagen5.jpg"></a><a href="../../css/images/Portafolio/repgina-20/Imagen5_1.jpg"><img src="../../css/images/Portafolio/repgina-20/Imagen5_1.jpg"></a></div></div></div>');
+            
+                 break;
+            case 'ferreteria-el-palmar':
+                
+            $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>Ferretera El Palmar</h1><p>Con una estructura de acero se logr&oacute; crear una nave en esta ferreter&iacute;a, todo esto con la finalidad de resguardar material de forma ordenada y en buenas condiciones. Se ampli&oacute; el &aacute;rea de carga y el estacionamiento.Las estructuras de acero poseen una gran capacidad resistente por el empleo de acero. Tiene adem&aacute;s la ventaja de la facilidad de manejo de los componentes estructurales en taller y campo, facilidad de transporte, as&iacute; como ligereza, ductilidad, resistencia a la fatiga y gran capacidad de absorci&oacute;n de energ&iacute;a.</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>Ferretera El Palmar</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina-6/Ferre.jpg"><img src="../../css/images/Portafolio/repgina-6/Ferre.jpg"></a><a href="../../css/images/Portafolio/repgina-6/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina-6/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina-6/Imagen2.jpg"><img src="../../css/images/Portafolio/repgina-6/Imagen2.jpg"></a><a href="../../css/images/Portafolio/repgina-6/Imagen3.jpg"><img src="../../css/images/Portafolio/repgina-6/Imagen3.jpg"></a><a href="../../css/images/Portafolio/repgina-6/Imagen5.jpg"><img src="../../css/images/Portafolio/repgina-6/Imagen5.jpg"></a></div></div></div>');
+                 break;
+            case '/privada-residencial':
+                
+            $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>Privada Quer&eacute;taro</h1><p>Para el acceso de esta privada se gener&oacute; un acceso a base de madera aunado a un jard&iacute;n vertical para crear sensaci&oacute;n de pulcritud. La privada consta de un &aacute;rea com&uacute;n, la cual busca que el usuario interact&uacute;e con el exterior, cuenta con alberca, un espacio de comedor y juegos infantiles.La casa muestra es estilo minimalista, respetando la armon&iacute;a de todo el entorno utilizando madera en la fachada. Se utilizaron ventanas de gran tama&ntilde;o para aprovechar al m&aacute;ximo la luz natural.</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>Privada Quer&eacute;taro</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina-8/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina-8/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina-8/Imagen1_1.jpg"><img src="../../css/images/Portafolio/repgina-8/Imagen1_1.jpg"></a><a href="../../css/images/Portafolio/repgina-8/Imagen2.jpg"><img src="../../css/images/Portafolio/repgina-8/Imagen2.jpg"></a><a href="../../css/images/Portafolio/repgina-8/Imagen2_1.jpg"><img src="../../css/images/Portafolio/repgina-8/Imagen2_1.jpg"></a><a href="../../css/images/Portafolio/repgina-8/Imagen3.jpg"><img src="../../css/images/Portafolio/repgina-8/Imagen3.jpg"></a><a href="../../css/images/Portafolio/repgina-8/Imagen3_1.jpg"><img src="../../css/images/Portafolio/repgina-8/Imagen3_1.jpg"></a><a href="../../css/images/Portafolio/repgina-8/Imagen4.jpg"><img src="../../css/images/Portafolio/repgina-8/Imagen4.jpg"></a><a href="../../css/images/Portafolio/repgina-8/Imagen4_1.jpg"><img src="../../css/images/Portafolio/repgina-8/Imagen4_1.jpg"></a><a href="../../css/images/Portafolio/repgina-8/Imagen5.jpg"><img src="../../css/images/Portafolio/repgina-8/Imagen5.jpg"></a><a href="../../css/images/Portafolio/repgina-8/Imagen6.jpg"><img src="../../css/images/Portafolio/repgina-8/Imagen6.jpg"></a></div></div></div>');
+                 break;
+            case '/casa-habitacion':
+                
+            
+                 break;
+            case '/elevador':
+                
+            
+                 break;
+            case '/chantelle-salon':
+                
+            $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>Est&eacute;tica Chantelle</h1><p>Un inmueble de 50 a&ntilde;os de antig&uuml;edad, que inicialmente era una casa habitaci&oacute;n, y despu&eacute;s un Colegio de Odontolog&iacute;a se convirti&oacute; en una est&eacute;tica de gran renombre en Pachuca. Para lograr un cambio radical en el inmueble, se hizo una intervenci&oacute;n en la fachada dando como prioridad la integraci&oacute;n de lo natural y lograr darle al inmueble un aire de modernidad; para ello se incorporaron elementos como un jard&iacute;n vertical que da sensaci&oacute;n de frescura al recinto.En el interior se busc&oacute; implementar elementos modernos sin perder el sentido de la elegancia, es por ello que el uso de la madera juega en este proyecto un papel muy importante, que en conjunto con grandes ventanales, plafones, juegos de luces, y elementos decorativos dan como resultado un dise&ntilde;o sobrio, elegante y moderno.</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>Est&eacute;tica Chantelle</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina-21/chantelle.jpg"><img src="../../css/images/Portafolio/repgina-21/chantelle.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Escalera.png"><img src="../../css/images/Portafolio/repgina-21/Escalera.png"></a><a href="../../css/images/Portafolio/repgina-21/Imagen1%20(2).jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen1%20(2).jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen10.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen10.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen11.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen11.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen12.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen12.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen13.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen13.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen14.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen14.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen15.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen15.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen16.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen16.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen17.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen17.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen18.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen18.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen19.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen19.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen1_1.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen1_1.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen2%20(2).jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen2%20(2).jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen2.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen2.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen2_1.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen2_1.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen3.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen3.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen3_1.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen3_1.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen4.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen4.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen4_1.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen4_1.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen5.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen5.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen5_1.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen5_1.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen6.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen6.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen6_1.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen6_1.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen7.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen7.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen7_1.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen7_1.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen8.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen8.jpg"></a><a href="../../css/images/Portafolio/repgina-21/Imagen9.jpg"><img src="../../css/images/Portafolio/repgina-21/Imagen9.jpg"></a></div></div></div>');
+                 break;
+            case '/oficinas-islas-serrano':
+                $('#main').append('<div class="item"><div class="col-md-6 b-portfolio-text"><div><h1>Oficinas Islas-Serrano</h1><p>Ocupamos una oficina como centro de organizaci&oacute;n, la cual fue adecuada como un espacio totalmente abierto, con zonas de trabajo claramente identificadas, d&aacute;ndole un lugar a cada miembro del equipo de trabajo, los colores del logo de este despacho sirvieron para darle identidad propia al espacio, donde resalta de inmediato nuestro inter&eacute;s por el detalle y la decoraci&oacute;n. Seguimos en proceso de hacer de este lugar, nuestro lugar.</p></div><div><h5>Acerca del proyecto</h5><ul><li><p><span>Cliente:</span>Islas y Serrano</p></li><li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li><li><p><span>A&ntilde;o:</span>2014</p></li></ul><div class="b-portfolio-social"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a><a href="#"><i class="fa fa-instagram fa-lg"></i></a></div><!-- /.b-portfolio-social --></div></div><!-- /.b-portfolio-text --><div class="col-xs-12 col-md-6 b-portfolio-four"><div class="fotorama"data-nav="thumbs"><a href="../../css/images/Portafolio/repgina/Imagen1.jpg"><img src="../../css/images/Portafolio/repgina/Imagen1.jpg"></a><a href="../../css/images/Portafolio/repgina/Imagen2.jpg"><img src="../../css/images/Portafolio/repgina/Imagen2.jpg"></a><a href="../../css/images/Portafolio/repgina/Imagen3.jpg"><img src="../../css/images/Portafolio/repgina/Imagen3.jpg"></a><a href="../../css/images/Portafolio/repgina/Imagen4.jpg"><img src="../../css/images/Portafolio/repgina/Imagen4.jpg"></a><a href="../../css/images/Portafolio/repgina/Imagen6.jpg"><img src="../../css/images/Portafolio/repgina/Imagen6.jpg"></a></div></div></div>	');
+            
+                 break;
+                
+        }
+    
+});
+    </script>
+    
+    
+    
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+ 
+    
+    
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+
+    
+    <!-- Portfolio Style -->
+	<link href="../../css/bootstrap-portfolio.css" rel="stylesheet">
+	
+	<!-- Font Awesome, because...it is! -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<!-- Preview Styling, You Do Not Need This -->
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:700,400italic' rel='stylesheet' type='text/css'>
+	
+	<style type="text/css">
+
+
+        
+        
+        .b-portfolio-text ul span, .b-portfolio-text ol span
+        {
+            width: 200px;
+        }
+        
+        
+        #main h1{
+            display: block;
+            width: 100%;
+            text-align: center;
+            line-height: 2em;
+            color: #088;
+        }
+         #main .item{
+             overflow: auto;
+            padding-bottom: 20px;
+        }
+	</style>
+
+    
+    
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        #viewer img{width:350px;}
+        @media (max-width: 767px) {
+  #viewer img{width:90%;}
+}
+    </style>
+    
+
+    </head>
+    <body>
+    <header>
+       <figure>
+        <img id="logo" src="../../css/images/logo.png">
+        </figure>
+        <h1>            Islas &amp; Serrano Arquitectos</h1>
+        <h2>Dise&ntilde;ando espacios, cumpliendo sue&ntilde;os.</h2>
+        </header>
+        <nav id="nav" class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+             
+              <li><a href="index.html">INICIO</a></li>
+              <li><a href="servicios.html">SERVICIOS</a></li>
+                <li class="active"><a href="#">PORTAFOLIO</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            
+            </ul>
+            
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+        
+   <section id="main">
+       
+        </section>
+        
+        
+<section id="contact">
+            <div class="container wrapper">
+			<div class="row">
+				<div class="col-md-6 left-col">
+					<h6>Visitanos en:</h6>
+					<p>Av. del Palmar #106 A, 2do. Piso, Despacho E.<br>Colonia Rojo G&oacute;mez, Pachuca de Soto, Hidalgo, M&eacute;xico.</p>
+				</div>
+				<div class="col-md-6 right-col">
+					<h6>Siguenos en:</h6>
+					<p class="social-fb">
+						<a href="//facebook.com/IslasSerranoArquitectos">facebook.com/IslasSerranoArquitectos</a>
+					</p>
+				</div>
+			</div>
+		</div>
+        </section>
+          <footer>
+     
+        <p>Islas &amp; Serrano Arquitectos &copy; 2016</p>
+     
+    </footer>
+        
+       
+    </body>
+</html>

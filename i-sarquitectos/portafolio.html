@@ -48,6 +48,7 @@
          #main .item{
              overflow: auto;
             padding-bottom: 20px;
+             display: none;
         }
 	</style>
 
@@ -62,6 +63,7 @@
     </style>
     
 <script>
+    
     $(document).ready(function()
     {
 $('header h2').hide().fadeIn(3000);
@@ -72,8 +74,16 @@ $('header h2').hide().fadeIn(3000);
     }
 });
         
+        var dir=location.pathname.match(/\/([^\/]+)/g);
+        var containerDir=dir[dir.length-2];
         
-       
+  console.log(containerDir); 
+        switch (containerDir){
+            case '/adaptacion-cocina':
+                {
+                    console.log(containerDir);
+                }
+        }
     
 });
     </script>
@@ -203,14 +213,16 @@ $('header h2').hide().fadeIn(3000);
 		<div class="col-md-6 b-portfolio-text">
 				
 				<div>
-					<h1>Ba&ntilde;o Di</h1>
-				
+					<h1>Ba&ntilde;o DI</h1>
+				<p>
+                    Se llev&oacute; a cabo la remodelaci&oacute;n de un ba&ntilde;o completo dentro de una casa habitaci&oacute;n. El espacio contaba con ba&ntilde;era y debido a que era un ba&ntilde;o usado por caballeros, la decoraci&oacute;n era en tonos azules; para llevar a cabo un cambio completo, se retir&oacute; la ba&ntilde;era y se coloc&oacute; una regadera anexando una banca para la comodidad del usuario, se cambi&oacute; el cancel de policarbonato por uno de cristal templado; para dar un cambio radical se utilizaron  tonos neutros en piso y en muros, adem&aacute;s los muebles se pusieron en tonos marfil y la carpinter&iacute;a en color nogal; Para seguridad del usuario , la loseta del piso es antiderrapante para evitar accidentes
+                    </p>
 				</div>
 				
 				<div>
 					<h5>Acerca del proyecto</h5>
 					<ul>	
-						<li><p><span>Cliente:</span>Tuzo Express</p></li>
+						<li><p><span>Cliente:</span>Ba&ntilde;o DI</p></li>
 						<li><p><span>Tipo de proyecto:</span> Remodelaci&oacute;n</p></li>
 						<li><p><span>A&ntilde;o:</span>2014</p></li>
 					</ul>
@@ -230,7 +242,7 @@ $('header h2').hide().fadeIn(3000);
      data-nav="thumbs">
             
 <a href="css/images/Portafolio/repgina-3/Imagen1_1.png"><img src="css/images/Portafolio/repgina-3/Imagen1_1.png"></a>
-<a href="css/images/Portafolio/repgina-3/Imagen1.png"><img src="css/images/Portafolio/repgina-3/Imagen1.jpg"></a>
+<a href="css/images/Portafolio/repgina-3/Imagen1.png"><img src="css/images/Portafolio/repgina-3/Imagen1.png"></a>
              <a href="css/images/Portafolio/repgina-3/Imagen2_1.png"><img src="css/images/Portafolio/repgina-3/Imagen2_1.png"></a>
             <a href="css/images/Portafolio/repgina-3/Imagen2.png"><img src="css/images/Portafolio/repgina-3/Imagen2.png"></a>
            
@@ -249,7 +261,9 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>CANADEVI</h1>
-				
+				<p>
+                    El dise&ntilde;o se basa en la funcionalidad del inmueble, se marc&oacute; el acceso mediante diferentes materiales y texturas, cuenta con un jard&iacute;n vertical para anexar elementos de la naturaleza. Y en la parte frontal, cruzando el estacionamiento se cre&oacute; un &aacute;rea especial para conferencias, esta cuenta con juegos infantiles. 
+                    </p>
 				</div>
 				
 				<div>
@@ -293,7 +307,9 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>Centro estatal de prevenci&oacute;n social contra la violencia</h1>
-				
+				<p>
+                    En este centro de atenci&oacute;n se utilizaron diferentes formas para unificarse en un s&oacute;lo concepto. Se implement&oacute; un jard&iacute;n vertical con la finalidad de dar textura y al mismo tiempo ser amigable con el entorno.
+                    </p>
 				</div>
 				
 				<div>
@@ -335,7 +351,11 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>Ferretera El Palmar</h1>
-				
+				<p>
+                    Con una estructura de acero se logr&oacute; crear una nave en esta ferreter&iacute;a, todo esto con la finalidad de resguardar material de forma ordenada y en buenas condiciones. Se ampli&oacute; el &aacute;rea de carga y el estacionamiento.
+Las estructuras de acero poseen una gran capacidad resistente por el empleo de acero. Tiene adem&aacute;s la ventaja de la facilidad de manejo de los componentes estructurales en taller y campo, facilidad de transporte, as&iacute; como ligereza, ductilidad, resistencia a la fatiga y gran capacidad de absorci&oacute;n de energ&iacute;a.
+
+                    </p>
 				</div>
 				
 				<div>
@@ -379,7 +399,10 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>Sala de Gobierno</h1>
-				
+				<p>
+                    Para esta sala de juntas se cre&oacute; con el objetivo atraer la atenci&oacute;n al mural, por lo que se busc&oacute; mostrarlo mediante un espejo para que pudiera ser visto desde cualquier punto de la habitaci&oacute;n; se usaron colores neutros para armonizar todo el ambiente.
+
+                    </p>
 				</div>
 				
 				<div>
@@ -422,7 +445,11 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>Privada Quer&eacute;taro</h1>
-				
+				<p>
+                    Para el acceso de esta privada se gener&oacute; un acceso a base de madera aunado a un jard&iacute;n vertical para crear sensaci&oacute;n de pulcritud. La privada consta de un &aacute;rea com&uacute;n, la cual busca que el usuario interact&uacute;e con el exterior, cuenta con alberca, un espacio de comedor y juegos infantiles. 
+La casa muestra es estilo minimalista, respetando la armon&iacute;a de todo el entorno utilizando madera en la fachada. Se utilizaron ventanas de gran tama&ntilde;o para aprovechar al m&aacute;ximo la luz natural.
+
+                    </p>
 				</div>
 				
 				<div>
@@ -470,7 +497,10 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>Cocina Huasca</h1>
-				
+				<p>
+                    Se dise&ntilde;&oacute; una cocina estilo rustico que se adaptar&aacute; a la construcci&oacute;n del rancho actual;  se adapt&oacute; esta cocina para generar mayor funcionalidad y flujo de movimiento de los usuarios. Tiene barra al medio para practicidad de las funciones de cocina. Este espacio puede utilizarse tanto para eventos en el jard&iacute;n como para una comida al aire libre en familia. 
+
+                    </p>
 				</div>
 				
 				<div>
@@ -518,7 +548,9 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>Telesecundaria</h1>
-				
+				<p>
+                    Para la fachada se hizo un dise&ntilde;o sencillo y pulcro utilizando una base clara combinado con un tono rojizo para se&ntilde;alar el acceso al inmueble. En la reja se utilizaron l&iacute;neas diagonales para romper con la monoton&iacute;a del entorno y darle movimiento a la fachada. 
+                    </p>
 				</div>
 				
 				<div>
@@ -566,7 +598,11 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>Casa Habitaci&oacute;n Vargas</h1>
-				
+				<p>
+                    Se utiliz&oacute; un estilo moderno, ya que en la planta baja hay un negocio y el los pisos superiores es una casa habitaci&oacute;n; es por ello que la fachada tiene una volumetr&iacute;a sencilla pero  cuenta con los elementos arquitect&oacute;nicos necesarios para darle una imagen de frescura y dinamismo; para ello se utilizaron colores neutros como el color champagne acompa&ntilde;ados por un rojo intenso y una celos&iacute;a en color caf&eacute; simulaci&oacute;n madera que hace que el inmueble destaque del entorno
+
+                    
+                    </p>
 				</div>
 				
 				<div>
@@ -611,7 +647,12 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>Casa Donna</h1>
-				
+				<p>
+                    Para el dise&ntilde;o de esta casa, se consideraron varios aspectos, el principal era generar espacios con la sensaci&oacute;n de amplitud ya que las dimensiones son peque&ntilde;as.  En planta baja se cre&oacute; un espacio abierto, es decir una planta libre entre sala, comedor y cocina para dar amplitud y generar una continuidad visual; adem&aacute;s se gener&oacute; un acceso independiente al jard&iacute;n lateral y se crearon vistas del interior hacia el jard&iacute;n frontal y lateral. 
+Se utilizaron colores neutros combinados con colores como el verde generar un remate visual, adem&aacute;s se incorporaron elementos de valor sentimental para la familia en el recibidor de la casa. 
+Se busc&oacute; una fachada conservadora, utilizando un tono neutro como el crema combinado con tonos blancos de las puertas y molduras; tambi&eacute;n se utiliz&oacute; una piedra como elemento que da jerarqu&iacute;a ya que enmarca  la entrada al lugar junto con dos columnas estilo d&oacute;rico.
+
+                    </p>
 				</div>
 				
 				<div>
@@ -657,7 +698,11 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>Interiorismo CF</h1>
-				
+				<p>
+                    Para el dise&ntilde;o de interior de esta casa se buscaron elementos modernos que combinaran con  la gama de colores c&aacute;lidos que se eligi&oacute;, para ello, el uso de remates visuales es de vital importancia para darle vida y alegr&iacute;a a los espacios.
+La cocina cuenta con una isla adem&aacute;s de un desayunador independiente con vista hacia el comedor y la sala; al ser una casa a desnivel, se tienen diversas perspectivas que hay que cubrir. El punto principal de la sala y comedor es la decoraci&oacute;n que ayuda a realzar la colorimetr&iacute;a elegida; ambos espacios cuentan con unos ventanales de piso a techo que dan a un peque&ntilde;o jard&iacute;n con asador que permite tener una gran entrada de luz a estos espacios. 
+
+                    </p>
 				</div>
 				
 				<div>
@@ -703,7 +748,12 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>Habitaci&oacute;n FGI</h1>
-				
+				<p>
+                    La distribuci&oacute;n de esta casa habitaci&oacute;n se basa en la funcionalidad. Se cre&oacute; un acceso para invitados y otro de servicio por la cocina para facilitar la entrada y salida. 
+La cocina cuenta con una barra que nos permite tener una visi&oacute;n continua al comedor, generando la sensaci&oacute;n de amplitud; otro elemento a destacar es el remate visual colocado en el domo de la escalera, ya que para lograr tener un bonito detalle decorativo se le coloco un vitral, de tal modo que la escalera queda como el elemento rector de esta casa. Tambi&eacute;n cuenta con un patio que se convierte en extensi&oacute;n del comedor. 
+Todos los detalles fueron cuidados en esta casa, desde el color de la carpinter&iacute;a, hasta las cortinas;  la casa cuenta con muebles de madera y para darle un toque m&aacute;s elegante se le colocaron barras de m&aacute;rmol en ba&ntilde;os y cocina.  
+La sala principal cuenta con una celos&iacute;a de metal con formas circulares y hojas, dando la apariencia de ramas; esta celos&iacute;a nos permite delimitar f&iacute;sicamente el recibidor pero nos permite mantener una continuidad visual hacia el interior de la casa.
+                    </p>
 				</div>
 				
 				<div>
@@ -760,7 +810,10 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>Locales OGZ</h1>
-				
+				<p>
+                    Para esta  plaza comercial, se busc&oacute; un dise&ntilde;o sencillo, moderno y din&aacute;mico; para ello se hace &eacute;nfasis en las escaleras con un elemento decorativo que sirve de remate visual y elemento rector de toda la plaza, generando de este modo un punto focal cerca de la publicidad de los negocios con la finalidad de ayudar en la promoci&oacute;n de acuerdo a su ubicaci&oacute;n.
+
+                    </p>
 				</div>
 				
 				<div>
@@ -803,7 +856,10 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>Casa Ar&aacute;n</h1>
-				
+				<p>
+                    Para esta casa de descanso y fin de semana, se busc&oacute; generar un v&iacute;nculo del interior con su entorno, para ello se trat&oacute; de sacar el mayor provecho posible de los jardines, generando vistas desde la mayor&iacute;a de sus espacios. El dise&ntilde;o hace &eacute;nfasis en las terrazas, las cuales sirven de conexi&oacute;n con el entorno y nos dan espacios &oacute;ptimos para la convivencia, para la relajaci&oacute;n, para la lectura, etc. Para el dise&ntilde;o interno se utiliz&oacute; como base tonalidades c&aacute;lidas y se agregaron remates visuales que le dieran un toque m&aacute;s din&aacute;mico y elementos modernos de decoraci&oacute;n que complementan a la perfecci&oacute;n el espacio, generando un ambiente, fresco, tranquilo y lleno de vida. 
+
+                    </p>
 				</div>
 				
 				<div>
@@ -858,7 +914,12 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>Cocina Mur</h1>
-				
+				<p>
+                    Para la remodelaci&oacute;n de esta cocina se hicieron dos propuestas.
+Propuesta 1: se tom&oacute; como base el color blanco para hacer &eacute;nfasis en tonos lilas en texturas y formas dando la sensaci&oacute;n de un espacio limpio y amplio con un toque femenino.
+Propuesta 2: Se implement&oacute; una base en tonalidades c&aacute;lidas, jugando con colores beige, caf&eacute;, incorporando elementos en madera que resalten por la textura dentro espacio. Se propone crear un ambiente c&aacute;lido en esta habitaci&oacute;n.
+                    
+                    </p>
 				</div>
 				
 				<div>
@@ -896,13 +957,15 @@ $('header h2').hide().fadeIn(3000);
 		</div>
             </div>
        
-       <!-- .b-portfolio-one No.17 -->
+       <!-- .b-portfolio-one No.18 -->
 		<div class="item">
 		<div class="col-md-6 b-portfolio-text">
 				
 				<div>
 					<h1>Oficina Oligar</h1>
-				
+				<p>
+                    Para estas oficinas se busc&oacute; crear un espacio pulcro, bas&aacute;ndonos en la psicolog&iacute;a del color y aprovechando las texturas existentes, se busc&oacute; generar no s&oacute;lo un espacio, sino un ambiente en el que los colaboradores aumentaran su productividad estando en un espacio sencillo, pero acogedor y adecuado para trabajar.
+                    </p>
 				</div>
 				
 				<div>
@@ -945,7 +1008,10 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>Clinica de Ortodoncia</h1>
-				
+				<p>
+                    Una casa-habitaci&oacute;n de m&aacute;s de 60 a&ntilde;os de antig&uuml;edad ubicada en el centro hist&oacute;rico de la ciudad de Pachuca, se remodel&oacute; para hacer una cl&iacute;nica de ortodoncia donde el principal reto, era el respet&oacute; a la esencia de la fachada s&oacute;lo haciendo cambios en color y texturas, debido a que el inmueble est&aacute; ubicado dentro de la zona de centro hist&oacute;rico de la ciudad. En el interior, como elemento decorativo a destacar se utilizaron rompecabezas,  por el gusto del cliente por estos elementos. La base de este dise&ntilde;o fue el color chocolate y tonos marrones, haciendo uso de maderas y losetas en tonos cremas. Fue un dise&ntilde;o basado en la simpleza para dar el sentido de orden, amplitud e higiene.
+
+                    </p>
 				</div>
 				
 				<div>
@@ -992,7 +1058,11 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>Colegio Superior de Odontolog&iacute;a de Hidalgo</h1>
-				
+				<p>
+                    Se llev&oacute; a cabo la remodelaci&oacute;n de un espacio abandonado para crear una instituci&oacute;n educativa dedicada a la salud, se adapt&oacute; el espacio para la creaci&oacute;n de aulas, una cl&iacute;nica de pr&aacute;cticas, un edificio central donde hay una sala de maestros y oficinas para la direcci&oacute;n general, estacionamiento, sanitarios y espacios de esparcimiento. 
+Uno de los objetivos era generar un espacio que cumpliera con las necesidades de los alumnos para su desarrollo profesional. El cambio del inmueble fue radical, logrando un espacio profesional. 
+
+                    </p>
 				</div>
 				
 				<div>
@@ -1045,7 +1115,11 @@ $('header h2').hide().fadeIn(3000);
 				
 				<div>
 					<h1>Est&eacute;tica Chantelle</h1>
-				
+				<p>
+                    Un inmueble de 50 a&ntilde;os de antig&uuml;edad, que inicialmente era una casa habitaci&oacute;n, y despu&eacute;s un Colegio de Odontolog&iacute;a se convirti&oacute; en una est&eacute;tica de gran renombre en Pachuca. Para lograr un cambio radical en el inmueble, se hizo una intervenci&oacute;n en la fachada dando como prioridad la integraci&oacute;n de lo natural y lograr darle al inmueble un aire de modernidad; para ello se incorporaron elementos como un jard&iacute;n vertical que da sensaci&oacute;n de frescura al recinto. 
+En el interior se busc&oacute; implementar elementos modernos sin perder el sentido de la elegancia, es por ello que el uso de la madera juega en este proyecto un papel muy importante, que en conjunto con grandes ventanales, plafones, juegos de luces, y elementos decorativos dan como resultado un dise&ntilde;o sobrio, elegante y moderno.
+
+                    </p>
 				</div>
 				
 				<div>
@@ -1108,7 +1182,7 @@ $('header h2').hide().fadeIn(3000);
             </div>
        
        
- </div>
+ 
         </section>
         
         
